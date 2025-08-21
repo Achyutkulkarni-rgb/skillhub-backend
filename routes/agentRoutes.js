@@ -2,7 +2,7 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const Agent = require("../models/Agent"); // Your Agent model
-const { protect } = require("../middleware/authMiddleware");
+const { protect } = require("../Middleware/authmiddleware");
 
 const router = express.Router();
 
