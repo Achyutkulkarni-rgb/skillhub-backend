@@ -5,7 +5,7 @@ const csv = require("csv-parser");
 const fs = require("fs");
 const Agent = require("../models/Agent");
 const CSVItem = require("../models/CSVItem"); // Model to store distributed items
-const { protect } = require("../middleware/authMiddleware");
+const { protect } = require("../middleware/authmiddleware");
 
 const router = express.Router();
 const upload = multer({ dest: "uploads/" });
